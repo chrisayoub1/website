@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Al Asala Perfumes | عطور الأصالة - Eau de Parfum 100ml</title>
+<meta name="description" content="اكتشف عطر الأصالة 100ml Eau de Parfum بتصميم فاخر مستوحى من الحضارة المصرية وتفاصيل ذهبية راقية. اطلب الآن عبر واتساب.">
+<meta name="keywords" content="عطر الأصالة, Al Asala, Eau de Parfum, عطور فاخرة, عطور مصرية, 100ml">
+<meta name="author" content="Al Asala Perfumes">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Al Asala Perfumes | عطور الأصالة">
+<meta property="og:description" content="عطر يحكي التاريخ — Eau de Parfum 100ml مستوحى من الحضارة المصرية">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/10d75662-4ba0-4952-b46a-e97aef0d8bee.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ===== Reset & Base ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-base: #050505;
+    --bg-deep: #000000;
+    --bg-elevated: #0f0f0f;
+    --bg-card: #0a0a0a;
+    --ivory: #EAE6DA;
+    --ivory-soft: #C5C1B5;
+    --ivory-muted: #7A766E;
+    --gold: #C5A059;
+    --gold-bright: #D4AF37;
+    --gold-deep: #8A6D2F;
+    --gold-soft: rgba(197, 160, 89, 0.4);
+    --gold-faint: rgba(197, 160, 89, 0.05);
+    --border: rgba(197, 160, 89, 0.12);
+    --border-strong: rgba(197, 160, 89, 0.3);
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-lux: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--bg-base);
+    color: var(--ivory);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 { font-weight: 400; line-height: 1.1; letter-spacing: -0.01em; }
+  ::selection { background: var(--gold); color: var(--bg-deep); }
+  a { color: inherit; text-decoration: none; transition: color 0.4s var(--ease); }
+  img { max-width: 100%; height: auto; display: block; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+  /* ===== Texture & Backgrounds ===== */
+  .bg-grain {
+    position: fixed; inset: 0; pointer-events: none; z-index: 1; opacity: 0.3;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.79 0 0 0 0 0.65 0 0 0 0 0.35 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    mix-blend-mode: overlay;
+  }
+
+  /* ===== Layout ===== */
+  .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 4rem; position: relative; z-index: 5; }
+  .container-narrow { max-width: 900px; }
+  section { position: relative; }
+
+  /* Reveal Animation */
+  .reveal { opacity: 0; transform: translateY(50px); transition: opacity 1.4s var(--ease), transform 1.4s var(--ease); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.15s; }
+  .reveal-delay-2 { transition-delay: 0.3s; }
+  .reveal-delay-3 { transition-delay: 0.45s; }
+
+  /* ===== Header ===== */
+  .site-header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.5rem 0;
+    transition: all 0.5s var(--ease);
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+  }
+  .site-header.scrolled {
+    padding: 0.75rem 0;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+    max-width: 1500px; margin: 0 auto; padding: 0 4rem;
+  }
+
+  .logo-img {
+    height: 60px; width: auto;
+    transition: height 0.5s var(--ease);
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+  }
+  .site-header.scrolled .logo-img { height: 48px; }
+
+  .nav-desktop { display: flex; align-items: center; gap: 3rem; }
+  .nav-desktop ul { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-desktop ul a {
+    font-family: 'Amiri', serif; font-size: 1.1rem; color: var(--ivory-soft);
+    position: relative; padding: 0.25rem 0;
+  }
+  .nav-desktop ul a::after {
+    content: ''; position: absolute; bottom: -2px; right: 0; left: 0;
+    height: 1px; background: var(--gold);
+    transform: scaleX(0); transform-origin: right;
+    transition: transform 0.4s var(--ease);
+  }
+  .nav-desktop ul a:hover { color: var(--gold-bright); }
+  .nav-desktop ul a:hover::after { transform: scaleX(1); }
+
+  .header-actions { display: flex; align-items: center; gap: 2rem; }
+  .lang-switcher {
+    display: flex; align-items: center; gap: 0.75rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem; letter-spacing: 0.2em; color: var(--ivory-muted);
+  }
+  .lang-switcher button { font: inherit; color: inherit; position: relative; padding: 0.2rem 0; }
+  .lang-switcher button.active { color: var(--gold-bright); }
+  .lang-switcher button.active::after {
+    content: ''; position: absolute; bottom: -3px; right: 0; left: 0;
+    height: 1px; background: var(--gold);
+  }
+
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, var(--gold-deep) 0%, var(--gold-bright) 50%, var(--gold) 100%);
+    color: #000; font-family: 'Amiri', serif; font-weight: 700;
+    font-size: 1.05rem; letter-spacing: 0.02em;
+    position: relative; overflow: hidden;
+    transition: all 0.4s var(--ease);
+    border: 1px solid var(--gold-bright);
+  }
+  .btn-gold::before {
+    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    transition: left 0.7s var(--ease);
+  }
+  .btn-gold:hover { box-shadow: 0 15px 40px -10px var(--gold-soft); transform: translateY(-2px); }
+  .btn-gold:hover::before { left: 100%; }
+
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    border: 1px solid var(--border-strong);
+    color: var(--ivory); font-family: 'Amiri', serif; font-size: 1.05rem;
+    background: transparent; transition: all 0.4s var(--ease);
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold-bright); background: var(--gold-faint); }
+
+  .menu-toggle { display: none; flex-direction: column; gap: 6px; padding: 0.5rem; z-index: 101; }
+  .menu-toggle span { width: 28px; height: 1px; background: var(--ivory); transition: all 0.4s var(--ease); }
+  .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); background: var(--gold); }
+  .menu-toggle.active span:nth-child(2) { opacity: 0; }
+  .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); background: var(--gold); }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 420px;
+    background: var(--bg-deep); z-index: 100;
+    transform: translateX(100%); transition: transform 0.6s var(--ease-lux);
+    padding: 8rem 3rem 3rem;
+    border-left: 1px solid var(--border);
+    overflow-y: auto;
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu ul { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
+  .mobile-menu ul a {
+    font-family: 'Amiri', serif; font-size: 1.8rem; color: var(--ivory);
+    display: block; padding-bottom: 1rem; border-bottom: 1px solid var(--border);
+  }
+  .menu-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
+    z-index: 99; opacity: 0; pointer-events: none; transition: opacity 0.4s var(--ease);
+  }
+  .menu-backdrop.open { opacity: 1; pointer-events: auto; }
+
+  /* ===== Hero ===== */
+  .hero {
+    min-height: 100vh; position: relative; overflow: hidden;
+    display: flex; align-items: center;
+    padding: 8rem 0 4rem;
+  }
+  .hero-bg-glow {
+    position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse at 70% 30%, rgba(197, 160, 89, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 80%, rgba(197, 160, 89, 0.05) 0%, transparent 40%);
+  }
+  .hero-inner {
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 6rem;
+    align-items: center; position: relative; z-index: 5; width: 100%;
+  }
+  
+  .hero-text { position: relative; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 1rem;
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 1.1rem; letter-spacing: 0.1em; color: var(--gold);
+    margin-bottom: 2.5rem;
+  }
+  .hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--gold); }
+
+  .hero-title {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: clamp(4rem, 9vw, 8.5rem);
+    line-height: 0.95; letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, #EAE6DA 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-subtitle-en {
+    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+    font-size: 1.75rem; color: var(--ivory-muted);
+    margin-bottom: 3rem; letter-spacing: 0.02em;
+  }
+  .hero-desc-ar {
+    font-family: 'Amiri', serif; font-size: 1.3rem; line-height: 1.9;
+    color: var(--ivory-soft); margin-bottom: 1rem; max-width: 540px;
+  }
+  .hero-desc-en {
+    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+    font-size: 1.1rem; color: var(--ivory-muted);
+    margin-bottom: 3.5rem; max-width: 540px; line-height: 1.7;
+  }
+  .hero-ctas { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+
+  .hero-visual {
+    position: relative; aspect-ratio: 3/4; display: grid; place-items: center;
+  }
+  .hero-visual::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle, rgba(197, 160, 89, 0.2) 0%, transparent 60%);
+    filter: blur(60px);
+  }
+  .hero-image-frame {
+    position: relative; width: 100%; height: 100%; z-index: 2;
+  }
+  .hero-image-frame img {
+    width: 100%; height: 100%; object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    animation: heroFloat 10s ease-in-out infinite;
+  }
+  @keyframes heroFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .scroll-cue {
+    position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 1rem;
+    color: var(--ivory-muted); z-index: 5;
+    font-family: 'Cormorant Garamond', serif; font-size: 0.8rem; letter-spacing: 0.3em; text-transform: uppercase;
+  }
+  .scroll-cue .line-v {
+    width: 1px; height: 50px; background: linear-gradient(180deg, var(--ivory-muted), transparent);
+    position: relative; overflow: hidden;
+  }
+  .scroll-cue .line-v::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 30%;
+    background: var(--gold-bright);
+    animation: scrollLine 2.2s ease-in-out infinite;
+  }
+  @keyframes scrollLine {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(330%); }
+  }
+
+  /* ===== Marquee ===== */
+  .marquee-band {
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    padding: 1.25rem 0; overflow: hidden;
+    background: var(--bg-deep);
+  }
+  .marquee-track {
+    display: flex; gap: 4rem; white-space: nowrap;
+    animation: marquee 35s linear infinite; width: max-content;
+  }
+  .marquee-track span {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; letter-spacing: 0.4em;
+    text-transform: uppercase; color: var(--gold);
+    display: inline-flex; align-items: center; gap: 4rem;
+  }
+  .marquee-track span::after { content: '✦'; color: var(--gold-deep); font-size: 0.6rem; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  /* ===== Sections ===== */
+  .section-pad { padding: 10rem 0; }
+  .section-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.85rem;
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 1rem; letter-spacing: 0.1em; color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .section-eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  
+  .section-title {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 1.1; color: var(--ivory); margin-bottom: 1.5rem;
+  }
+  .section-title-en {
+    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+    font-size: 1.5rem; color: var(--gold-bright); margin-bottom: 2.5rem;
+  }
+  .section-desc {
+    font-family: 'Amiri', serif; font-size: 1.25rem; line-height: 1.9;
+    color: var(--ivory-soft); max-width: 640px;
+  }
+
+  /* ===== Product Section ===== */
+  .product-section { padding: 10rem 0; }
+  .product-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 6rem; align-items: center;
+  }
+  .product-visual {
+    position: relative; aspect-ratio: 4/5; overflow: visible;
+  }
+  .product-visual img {
+    width: 100%; height: 100%; object-fit: cover;
+    box-shadow: 0 50px 100px -20px rgba(0,0,0,0.8);
+    transition: transform 1.2s var(--ease);
+  }
+  .product-visual:hover img { transform: scale(1.02); }
+  
+  .product-info h2 { 
+    font-family: 'Cormorant Garamond', serif; font-weight: 500; 
+    font-size: clamp(2.5rem, 5vw, 4.5rem); color: var(--ivory); margin-bottom: 0.5rem;
+  }
+  .product-tagline {
+    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300;
+    color: var(--gold-bright); font-size: 1.5rem; margin-bottom: 3rem;
+  }
+  .product-volume {
+    display: inline-flex; align-items: baseline; gap: 0.5rem;
+    padding: 0.75rem 1.75rem; border: 1px solid var(--border-strong);
+    margin-bottom: 3rem; font-family: 'Cormorant Garamond', serif;
+  }
+  .product-volume .num { font-size: 1.75rem; color: var(--gold-bright); font-weight: 500; }
+  .product-volume .unit { font-size: 0.85rem; letter-spacing: 0.3em; color: var(--ivory-muted); text-transform: uppercase; }
+
+  .product-features { list-style: none; margin-bottom: 3.5rem; }
+  .product-features li {
+    display: flex; align-items: center; gap: 1.25rem;
+    padding: 1.25rem 0; border-bottom: 1px solid var(--border);
+    font-family: 'Amiri', serif; font-size: 1.15rem; color: var(--ivory-soft);
+    transition: padding 0.4s var(--ease), color 0.4s var(--ease);
+  }
+  .product-features li:hover { padding-right: 0.75rem; color: var(--gold-bright); }
+  .product-features li::before {
+    content: ''; width: 6px; height: 6px; background: var(--gold);
+    transform: rotate(45deg); flex-shrink: 0;
+  }
+
+  /* ===== Luxury Packaging ===== */
+  .packaging-section { padding: 10rem 0; border-top: 1px solid var(--border); }
+  .packaging-head { text-align: center; margin-bottom: 6rem; }
+  .packaging-head .section-eyebrow { justify-content: center; }
+  .packaging-head .section-eyebrow::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .packaging-head .section-eyebrow::before { display: none; }
+  .packaging-head .section-title { text-align: center; }
+  .packaging-head .section-title-en { text-align: center; }
+  .packaging-head .section-desc { margin: 0 auto; text-align: center; }
+
+  .cards-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  }
+  .lux-card {
+    position: relative; padding: 3rem 2rem;
+    border-left: 1px solid var(--border);
+    transition: background 0.5s var(--ease);
+  }
+  .lux-card:first-child { border-left: none; }
+  .lux-card::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px;
+    background: var(--gold); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.6s var(--ease);
+  }
+  .lux-card:hover { background: var(--gold-faint); }
+  .lux-card:hover::before { transform: scaleX(1); }
+  
+  .lux-card .num-tag {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--gold-deep); font-size: 1rem; letter-spacing: 0.1em;
+    display: block; margin-bottom: 2rem;
+  }
+  .lux-card .icon-frame {
+    width: 56px; height: 56px; margin-bottom: 2rem;
+    display: flex; align-items: center; justify-content: flex-start;
+  }
+  .lux-card .icon-frame svg { width: 100%; height: 100%; fill: none; stroke: var(--gold); stroke-width: 0.8; }
+  .lux-card h3 {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: 1.4rem; color: var(--ivory); margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  .lux-card p {
+    font-family: 'Amiri', serif; font-size: 1rem; line-height: 1.8; color: var(--ivory-muted);
+  }
+
+  /* ===== Heritage Section ===== */
+  .heritage-section { padding: 12rem 0; position: relative; overflow: hidden; }
+  .heritage-bg {
+    position: absolute; inset: 0; z-index: 1; opacity: 0.4;
+  }
+  .heritage-bg img { width: 100%; height: 100%; object-fit: cover; }
+  .heritage-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, var(--bg-base) 0%, transparent 30%, transparent 70%, var(--bg-base) 100%),
+                linear-gradient(90deg, var(--bg-base) 0%, transparent 30%, transparent 70%, var(--bg-base) 100%);
+  }
+  .heritage-content {
+    position: relative; z-index: 5; max-width: 760px; margin: 0 auto; text-align: center;
+  }
+  .heritage-content .section-eyebrow { justify-content: center; }
+  .heritage-content .section-eyebrow::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .heritage-content .section-eyebrow::before { display: none; }
+  .heritage-content .section-title { font-size: clamp(3rem, 6vw, 6rem); margin-bottom: 2rem; }
+  .heritage-content .section-desc {
+    margin: 0 auto; text-align: center; font-size: 1.4rem; color: var(--ivory); line-height: 2;
+  }
+  .heritage-content .desc-en {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--ivory-muted); font-size: 1.1rem; margin-top: 2rem;
+  }
+
+  /* ===== Dimensions ===== */
+  .dimensions-section { padding: 10rem 0; border-top: 1px solid var(--border); }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+  .dim-card {
+    padding: 0; position: relative;
+  }
+  .dim-card .label {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--gold); font-size: 0.9rem; letter-spacing: 0.3em; text-transform: uppercase;
+    margin-bottom: 1rem; display: block;
+  }
+  .dim-card h3 {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: 2rem; color: var(--ivory); margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);
+  }
+  .dim-list { list-style: none; }
+  .dim-list li {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 1.5rem 0; border-bottom: 1px solid var(--border);
+  }
+  .dim-list .key { font-family: 'Amiri', serif; color: var(--ivory-muted); font-size: 1.1rem; }
+  .dim-list .val {
+    font-family: 'Cormorant Garamond', serif; color: var(--gold-bright);
+    font-size: 1.6rem; font-weight: 500;
+  }
+
+  /* ===== Gift Section ===== */
+  .gift-section { padding: 10rem 0; }
+  .gift-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: center; }
+  .gift-visual { position: relative; aspect-ratio: 4/5; }
+  .gift-visual img {
+    width: 100%; height: 100%; object-fit: cover;
+    mask-image: linear-gradient(to left, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 80%, transparent 100%);
+  }
+  .gift-info h2 { font-family: 'Amiri', serif; font-weight: 700; font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1.5rem; }
+  .gift-info .section-title-en { margin-bottom: 2rem; }
+
+  /* ===== Order Section ===== */
+  .order-section { padding: 12rem 0; position: relative; overflow: hidden; }
+  .order-content { text-align: center; max-width: 760px; margin: 0 auto; position: relative; z-index: 5; }
+  .order-content .section-eyebrow { justify-content: center; }
+  .order-content .section-eyebrow::after { content: ''; width: 30px; height: 1px; background: var(--gold); }
+  .order-content .section-eyebrow::before { display: none; }
+  .order-content h2 {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: clamp(3rem, 7vw, 6rem); color: var(--ivory); margin-bottom: 1.5rem; line-height: 1.1;
+  }
+  .order-content .en-title {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--gold-bright); font-size: 1.5rem; margin-bottom: 1.5rem;
+  }
+  .order-content p {
+    font-family: 'Amiri', serif; font-size: 1.3rem; color: var(--ivory-soft); margin-bottom: 3.5rem;
+  }
+
+  .whatsapp-btn {
+    display: inline-flex; align-items: center; gap: 1rem;
+    padding: 1.5rem 3.5rem;
+    background: linear-gradient(135deg, #0d5b2c 0%, #25D366 50%, #128C7E 100%);
+    color: #fff; font-family: 'Amiri', serif; font-weight: 700;
+    font-size: 1.3rem; border: 1px solid #25D366;
+    position: relative; overflow: hidden;
+    transition: all 0.4s var(--ease);
+    box-shadow: 0 25px 50px -15px rgba(37, 211, 102, 0.4);
+  }
+  .whatsapp-btn:hover { transform: translateY(-3px); box-shadow: 0 30px 70px -15px rgba(37, 211, 102, 0.5); }
+  .whatsapp-btn svg { width: 28px; height: 28px; fill: currentColor; }
+
+  .phone-display {
+    margin-top: 2.5rem; font-family: 'Cormorant Garamond', serif;
+    color: var(--ivory-muted); font-size: 1.2rem; letter-spacing: 0.1em;
+    display: inline-flex; align-items: center; gap: 1rem;
+  }
+  .phone-display::before, .phone-display::after { content: ''; width: 40px; height: 1px; background: var(--gold); }
+  .phone-display strong { color: var(--gold-bright); font-weight: 500; }
+
+  /* ===== Trust Section ===== */
+  .trust-section { padding: 6rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .trust-item {
+    text-align: center; padding: 2rem 1.5rem; border-left: 1px solid var(--border);
+  }
+  .trust-item:first-child { border-left: none; }
+  .trust-item .num {
+    font-family: 'Cormorant Garamond', serif; font-weight: 500;
+    font-size: 3.5rem; color: var(--gold-bright); line-height: 1; margin-bottom: 1rem;
+  }
+  .trust-item .title {
+    font-family: 'Amiri', serif; font-weight: 700;
+    font-size: 1.2rem; color: var(--ivory); margin-bottom: 0.5rem;
+  }
+  .trust-item .desc {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 1rem; color: var(--ivory-muted);
+  }
+
+  /* ===== Footer ===== */
+  .site-footer { padding: 8rem 0 3rem; background: var(--bg-deep); border-top: 1px solid var(--border); }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 4rem; margin-bottom: 5rem; }
+  .footer-logo { margin-bottom: 2rem; }
+  .footer-logo .logo-img { height: 80px; }
+  .footer-tagline {
+    font-family: 'Amiri', serif; font-size: 1.5rem; color: var(--gold-bright); margin-bottom: 1rem;
+  }
+  .footer-tagline-en {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--ivory-muted); margin-bottom: 2rem; font-size: 1.1rem;
+  }
+  .footer-contact { font-family: 'Cormorant Garamond', serif; color: var(--ivory-soft); font-size: 1.2rem; }
+  .footer-contact a { color: var(--gold-bright); }
+
+  .footer-col h4 {
+    font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 2rem;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 1rem; }
+  .footer-col ul a {
+    font-family: 'Amiri', serif; color: var(--ivory-soft); font-size: 1.1rem;
+    transition: all 0.3s var(--ease);
+  }
+  .footer-col ul a:hover { color: var(--gold-bright); padding-right: 0.5rem; }
+
+  .footer-bottom {
+    padding-top: 2.5rem; border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+    font-family: 'Cormorant Garamond', serif; color: var(--ivory-muted); font-size: 0.95rem;
+  }
+
+  /* ===== Sticky WhatsApp ===== */
+  .sticky-wa {
+    position: fixed; bottom: 1.25rem; left: 1.25rem; right: 1.25rem; z-index: 90;
+    display: none; padding: 1.1rem 1.5rem;
+    background: linear-gradient(135deg, #0d5b2c 0%, #25D366 100%);
+    color: #fff; font-family: 'Amiri', serif; font-weight: 700; font-size: 1.1rem;
+    align-items: center; justify-content: center; gap: 0.75rem;
+    box-shadow: 0 25px 50px -15px rgba(37, 211, 102, 0.6);
+    transition: transform 0.4s var(--ease);
+  }
+  .sticky-wa.hidden { transform: translateY(150%); }
+  .sticky-wa svg { width: 24px; height: 24px; fill: currentColor; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 1100px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .lux-card:nth-child(3) { border-left: none; border-top: 1px solid var(--border); }
+    .lux-card:nth-child(4) { border-top: 1px solid var(--border); }
+    .product-grid, .gift-grid { grid-template-columns: 1fr; gap: 4rem; }
+    .gift-visual { max-width: 600px; margin: 0 auto; }
+    .product-visual { max-width: 600px; margin: 0 auto; }
+    .container { padding: 0 3rem; }
+  }
+
+  @media (max-width: 900px) {
+    .nav-desktop, .header-actions .lang-switcher { display: none; }
+    .menu-toggle { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 4rem; text-align: center; }
+    .hero-eyebrow { justify-content: center; }
+    .hero-eyebrow::before { display: none; }
+    .hero-desc-ar, .hero-desc-en { margin-left: auto; margin-right: auto; }
+    .hero-ctas { justify-content: center; }
+    .hero-visual { max-width: 500px; margin: 0 auto; aspect-ratio: 3/4; }
+    .hero { padding-top: 8rem; min-height: auto; padding-bottom: 5rem; }
+    .section-pad, .product-section, .packaging-section, .heritage-section, .dimensions-section, .gift-section, .order-section { padding: 6rem 0; }
+    .container { padding: 0 1.5rem; }
+    .header-inner { padding: 0 1.5rem; }
+    .trust-grid { grid-template-columns: repeat(2, 1fr); }
+    .trust-item:nth-child(3) { border-left: none; border-top: 1px solid var(--border); }
+    .trust-item:nth-child(4) { border-top: 1px solid var(--border); }
+    .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .dim-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .sticky-wa { display: flex; }
+    .footer-logo { display: flex; justify-content: flex-start; }
+  }
+
+  @media (max-width: 600px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .lux-card { border-left: none; border-top: 1px solid var(--border); }
+    .lux-card:first-child { border-top: none; }
+    .hero-title { font-size: 3.5rem; }
+    .section-title { font-size: 2.25rem; }
+    .btn-gold, .btn-outline { padding: 0.9rem 1.5rem; font-size: 1rem; width: 100%; justify-content: center; }
+    .hero-ctas { flex-direction: column; align-items: stretch; gap: 1rem; }
+    .whatsapp-btn { padding: 1.25rem 2rem; font-size: 1.1rem; width: 100%; justify-content: center; }
+    .trust-grid { grid-template-columns: 1fr; }
+    .trust-item { border-left: none; border-top: 1px solid var(--border); }
+    .trust-item:first-child { border-top: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-grain"></div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="header">
+  <div class="header-inner">
+    <a href="#hero" class="logo" aria-label="Al Asala Perfumes">
+      <img src="https://z-cdn-media.chatglm.cn/files/10d75662-4ba0-4952-b46a-e97aef0d8bee.jpg?auth_key=1889488103-4f3060f3a16e42bcaf3ed408ee33e568-0-ada2a9e4a41f46f726f0bd8c70031a74" alt="Al Asala Perfumes Logo" class="logo-img">
+    </a>
+
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul>
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#product">العطر</a></li>
+        <li><a href="#heritage">القصة</a></li>
+        <li><a href="#features">المميزات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switcher" role="group" aria-label="Language switcher">
+        <button class="active" type="button" data-lang="ar">العربية</button>
+        <span>|</span>
+        <button type="button" data-lang="en">English</button>
+      </div>
+      <a href="#order" class="btn-gold">اطلب الآن</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="#hero" data-mobile-link>الرئيسية</a></li>
+    <li><a href="#product" data-mobile-link>العطر</a></li>
+    <li><a href="#heritage" data-mobile-link>القصة</a></li>
+    <li><a href="#features" data-mobile-link>المميزات</a></li>
+    <li><a href="#order" data-mobile-link>اطلب الآن</a></li>
+    <li><a href="#contact" data-mobile-link>تواصل معنا</a></li>
+  </ul>
+</aside>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg-glow"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text reveal">
+        <span class="hero-eyebrow">Al Asala Eau de Parfum — 100ml</span>
+        <h1 class="hero-title">عطر يحكي<br>التاريخ</h1>
+        <p class="hero-subtitle-en">A fragrance that tells the story of history</p>
+        <p class="hero-desc-ar">فخامة مستوحاة من الحضارة المصرية، بتفاصيل صُممت لتترك حضوراً لا يُنسى.</p>
+        <p class="hero-desc-en">A luxurious fragrance inspired by Egyptian heritage, crafted to leave an unforgettable presence.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn-gold" data-whatsapp>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            اطلب الآن عبر واتساب
+          </a>
+          <a href="#product" class="btn-outline">اكتشف العطر</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-image-frame">
+          <img src="https://z-cdn-media.chatglm.cn/files/6a414bad-126f-4a9c-a4e1-5d3da06ff4d4.jpg?auth_key=1889488103-880cd8426bec40939b5a86f8ee555f63-0-a91933e70714ed0f7a65cd076cdd1847"
+               alt="عطر الأصالة Al Asala Eau de Parfum 100ml - زجاجة العطر الفاخرة مع العلبة السوداء والتفاصيل الذهبية"
+               loading="eager">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="line-v"></div>
+  </div>
+</section>
+
+<!-- Marquee band -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Al Asala Perfumes</span>
+    <span>Eau de Parfum</span>
+    <span>100ml</span>
+    <span>عطور الأصالة</span>
+    <span>Pharaonic Heritage</span>
+    <span>Luxury Edition</span>
+    <span>Al Asala Perfumes</span>
+    <span>Eau de Parfum</span>
+    <span>100ml</span>
+    <span>عطور الأصالة</span>
+    <span>Pharaonic Heritage</span>
+    <span>Luxury Edition</span>
+  </div>
+</div>
+
+<!-- ===== Product Section ===== -->
+<section class="product-section" id="product">
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-visual reveal">
+        <img src="https://z-cdn-media.chatglm.cn/files/e0585378-07cd-4367-8e62-09722fc18c34.jpg?auth_key=1889488103-3f7ac0664ecf4478880e9293ab285109-0-61a177a576b4dde2a499afa0d7992948"
+             alt="زجاجة عطر الأصالة Al Asala 100ml Eau de Parfum على طاولة فاخرة"
+             loading="lazy">
+      </div>
+
+      <div class="product-info reveal reveal-delay-2">
+        <span class="section-eyebrow">The Fragrance</span>
+        <h2>Al Asala<br>Eau de Parfum</h2>
+        <p class="product-tagline">A fragrance that tells the story of history</p>
+
+        <div class="product-volume">
+          <span class="num">100</span>
+          <span class="unit">ml · Eau de Parfum</span>
+        </div>
+
+        <ul class="product-features">
+          <li>Eau de Parfum — تركيز فاخر يدوم</li>
+          <li>100ml — حجم كامل يليق بالحضور</li>
+          <li>Premium luxury presentation</li>
+          <li>Pharaonic-inspired design</li>
+          <li>Secure premium packaging</li>
+        </ul>
+
+        <div class="hero-ctas">
+          <a href="#" class="btn-gold" data-whatsapp>اطلب الآن عبر واتساب</a>
+          <a href="#heritage" class="btn-outline">اكتشف القصة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Luxury Packaging ===== -->
+<section class="packaging-section" id="features">
+  <div class="container">
+    <div class="packaging-head reveal">
+      <span class="section-eyebrow">Luxury Packaging</span>
+      <h2 class="section-title">تفاصيل صُنعت للفخامة</h2>
+      <p class="section-title-en">Details crafted for luxury</p>
+      <p class="section-desc">التغليف جزء أساسي من تجربة Al Asala، صُمم ليمنح لحظة الاستلام حضوراً يليق بالعطر.</p>
+    </div>
+
+    <div class="cards-grid">
+      <article class="lux-card reveal">
+        <span class="num-tag">01</span>
+        <div class="icon-frame">
+          <svg viewBox="0 0 32 32"><path d="M6 8 L6 24 L26 24 L26 8 Z M6 12 L26 12 M10 8 L10 4 L22 4 L22 8"/><circle cx="16" cy="18" r="3"/></svg>
+        </div>
+        <h3>كرتون صلب عالي الجودة</h3>
+        <p>علبة صلبة فاخرة مصممة لحماية العطر وتقديم تجربة راقية.</p>
+      </article>
+
+      <article class="lux-card reveal reveal-delay-1">
+        <span class="num-tag">02</span>
+        <div class="icon-frame">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="6"/><path d="M16 4 L16 10 M16 22 L16 28 M4 16 L10 16 M22 16 L28 16"/><path d="M8 8 L12 12 M20 20 L24 24 M8 24 L12 20 M20 12 L24 8"/></svg>
+        </div>
+        <h3>إغلاق مغناطيسي</h3>
+        <p>إغلاق مغناطيسي يمنح تجربة فتح سلسة وفاخرة.</p>
+      </article>
+
+      <article class="lux-card reveal reveal-delay-2">
+        <span class="num-tag">03</span>
+        <div class="icon-frame">
+          <svg viewBox="0 0 32 32"><path d="M4 16 L16 4 L28 16 L16 28 Z M10 16 L16 10 L22 16 L16 22 Z"/><path d="M16 4 L16 28 M4 16 L28 16"/></svg>
+        </div>
+        <h3>طباعة ذهبية فاخرة</h3>
+        <p>تفاصيل ذهبية مستوحاة من الرموز الفرعونية تمنح العلبة حضوراً مميزاً.</p>
+      </article>
+
+      <article class="lux-card reveal reveal-delay-3">
+        <span class="num-tag">04</span>
+        <div class="icon-frame">
+          <svg viewBox="0 0 32 32"><path d="M8 6 L8 26 L24 26 L24 6 Z M12 6 L12 2 L20 2 L20 6 M8 14 L24 14 M8 18 L24 18"/><circle cx="16" cy="10" r="2"/></svg>
+        </div>
+        <h3>حماية مثالية للعطر</h3>
+        <p>تصميم داخلي مخصص يثبت زجاجة 100ml ويحافظ عليها بأمان.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pharaonic Heritage ===== -->
+<section class="heritage-section" id="heritage">
+  <div class="heritage-bg">
+    <img src="https://z-cdn-media.chatglm.cn/files/364445e2-84bd-471a-9eba-694aadcc8a96.jpg?auth_key=1889488103-29c3119317df4818bc189491a80166bf-0-96f3e703eebb1cb0b7774114170f8016"
+         alt="شعار عطر الأصالة بتصميم فرعوني فاخر مع قناع ذهبي وأجنحة"
+         loading="lazy">
+  </div>
+
+  <div class="container container-narrow">
+    <div class="heritage-content reveal">
+      <span class="section-eyebrow">Egyptian Heritage</span>
+      <h2 class="section-title">من روح الحضارة<br>المصرية</h2>
+      <p class="section-desc">الأصالة ليست مجرد اسم، بل إحساس بالفخامة مستوحى من حضارة تركت أثرها في التاريخ.</p>
+      <p class="desc-en">Al Asala is more than a name — it is a sense of luxury drawn from a civilization that left its mark on history.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Packaging Dimensions ===== -->
+<section class="dimensions-section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:5rem" class="reveal">
+      <span class="section-eyebrow" style="justify-content:center">Specifications</span>
+      <h2 class="section-title">أبعاد التغليف</h2>
+      <p class="section-title-en">Packaging Dimensions</p>
+    </div>
+
+    <div class="dim-grid">
+      <div class="dim-card reveal">
+        <span class="label">Standard Box · العلبة القياسية</span>
+        <h3>Standard Box</h3>
+        <ul class="dim-list">
+          <li><span class="key">الارتفاع · Height</span><span class="val">16.5 cm</span></li>
+          <li><span class="key">العرض · Width</span><span class="val">8.5 cm</span></li>
+          <li><span class="key">العمق · Depth</span><span class="val">5 cm</span></li>
+        </ul>
+      </div>
+
+      <div class="dim-card reveal reveal-delay-1">
+        <span class="label">Luxury Gift Bag · كيس الهدية الفاخر</span>
+        <h3>Luxury Gift Bag</h3>
+        <ul class="dim-list">
+          <li><span class="key">الارتفاع · Height</span><span class="val">24 cm</span></li>
+          <li><span class="key">العرض · Width</span><span class="val">17 cm</span></li>
+          <li><span class="key">العمق · Depth</span><span class="val">8 cm</span></li>
+          <li><span class="key">المقابض · Handles</span><span class="val">Braided Rope</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gift Experience ===== -->
+<section class="gift-section">
+  <div class="container">
+    <div class="gift-grid">
+      <div class="gift-visual reveal">
+        <img src="https://z-cdn-media.chatglm.cn/files/5393e0df-4d97-4a48-9a2d-8f9e96d5624c.jpg?auth_key=1889488103-9c05771a039d456c8e8a33022fba1fa9-0-acedcfdeac4be2023dfdd5dc336ee2a0"
+             alt="مجموعة عطر الأصالة الفاخرة مع الكيس الهدية والتغليف الذهبي"
+             loading="lazy">
+      </div>
+
+      <div class="gift-info reveal reveal-delay-2">
+        <span class="section-eyebrow">Gifting Experience</span>
+        <h2 class="section-title">هدية تليق<br>بمن تحب</h2>
+        <p class="section-title-en">A gift worthy of those you love</p>
+        <p class="section-desc" style="margin-bottom:2.5rem">تجربة فاخرة تبدأ من لحظة استلام الهدية وحتى فتح العطر.</p>
+        <p class="section-desc" style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ivory-muted);font-size:1.1rem;margin-bottom:2.5rem">A luxurious experience that begins the moment the gift is received, until the moment the fragrance is opened.</p>
+        <a href="#order" class="btn-gold">اطلب هديتك الآن</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Order Section ===== -->
+<section class="order-section" id="order">
+  <div class="container container-narrow">
+    <div class="order-content reveal">
+      <span class="section-eyebrow">Order Now</span>
+      <h2>جاهز لتجربة<br>الأصالة؟</h2>
+      <p class="en-title">Ready to experience Al Asala?</p>
+      <p>اطلب Al Asala Eau de Parfum 100ml الآن عبر واتساب.</p>
+
+      <a href="#" class="whatsapp-btn" data-whatsapp>
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        اطلب الآن عبر واتساب
+      </a>
+
+      <div class="phone-display">
+        <span>WhatsApp:</span>
+        <strong dir="ltr">+971 50 309 9617</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust Section ===== -->
+<section class="trust-section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <div class="num">100<span style="font-size:1.5rem">ml</span></div>
+        <div class="title">Eau de Parfum</div>
+        <div class="desc">تركيز فاخر</div>
+      </div>
+      <div class="trust-item reveal reveal-delay-1">
+        <div class="num" style="font-family:'Amiri',serif;font-size:1.5rem;letter-spacing:0.1em">LUXURY</div>
+        <div class="title">Packaging</div>
+        <div class="desc">Premium presentation</div>
+      </div>
+      <div class="trust-item reveal reveal-delay-2">
+        <div class="num" style="font-family:'Amiri',serif;font-size:1.5rem;letter-spacing:0.1em">PHARAONIC</div>
+        <div class="title">Inspired</div>
+        <div class="desc">Egyptian heritage aesthetic</div>
+      </div>
+      <div class="trust-item reveal reveal-delay-3">
+        <div class="num" style="font-family:'Amiri',serif;font-size:1.5rem;letter-spacing:0.1em">GIFT</div>
+        <div class="title">Ready</div>
+        <div class="desc">Luxury gift bag edition</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="https://z-cdn-media.chatglm.cn/files/10d75662-4ba0-4952-b46a-e97aef0d8bee.jpg?auth_key=1889488103-4f3060f3a16e42bcaf3ed408ee33e568-0-ada2a9e4a41f46f726f0bd8c70031a74" alt="Al Asala Perfumes" class="logo-img">
+        </div>
+        <p class="footer-tagline">عطر يحكي التاريخ</p>
+        <p class="footer-tagline-en">A fragrance that tells the story of history.</p>
+        <div class="footer-contact">
+          <div style="margin-bottom:0.5rem">WhatsApp:</div>
+          <a href="#" data-whatsapp dir="ltr">+971 50 309 9617</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#product">العطر</a></li>
+          <li><a href="#heritage">القصة</a></li>
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <ul>
+          <li><a href="#" data-whatsapp>واتساب · WhatsApp</a></li>
+          <li><a href="#order">اطلب الآن</a></li>
+          <li><a href="#gift">تجربة الهدية</a></li>
+        </ul>
+        <!--
+          مساحة مخصصة لإضافة روابط التواصل الاجتماعي مستقبلاً
+          Reserved for social media links:
+          - Instagram
+          - TikTok
+          - Facebook
+        -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="copyright">© <span id="year"></span> Al Asala Perfumes · عطور الأصالة. جميع الحقوق محفوظة.</span>
+      <span>Crafted with heritage · صُمم بإتقان</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky WhatsApp Button (Mobile) -->
+<a href="#" class="sticky-wa" id="stickyWa" data-whatsapp aria-label="Order via WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.608.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>اطلب الآن عبر واتساب</span>
+</a>
+
+<script>
+  // ===== WhatsApp Link Setup =====
+  const WHATSAPP_NUMBER = '971503099617';
+  const WHATSAPP_MESSAGE = 'مرحباً، أرغب في طلب عطر Al Asala Eau de Parfum 100ml.';
+  const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
+  document.querySelectorAll('[data-whatsapp]').forEach(el => {
+    el.setAttribute('href', waUrl);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener noreferrer');
+  });
+
+  // ===== Header scroll state =====
+  const header = document.getElementById('header');
+  const stickyWa = document.getElementById('stickyWa');
+  stickyWa.classList.add('hidden');
+
+  function onScroll() {
+    const y = window.scrollY;
+    if (y > 30) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+
+    if (y > 600) stickyWa.classList.remove('hidden');
+    else stickyWa.classList.add('hidden');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ===== Mobile Menu =====
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuBackdrop = document.getElementById('menuBackdrop');
+
+  function openMenu() {
+    menuToggle.classList.add('active');
+    mobileMenu.classList.add('open');
+    menuBackdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menuToggle.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    menuBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  menuBackdrop.addEventListener('click', closeMenu);
+  document.querySelectorAll('[data-mobile-link]').forEach(link => link.addEventListener('click', closeMenu));
+
+  // ===== Reveal on Scroll =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ===== Smooth scroll =====
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === '#' || href.length < 2) return;
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
